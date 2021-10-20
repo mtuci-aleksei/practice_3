@@ -5,19 +5,29 @@
     <title>Login</title>
 </head>
 <body>
+<form action="" method="post">
+        {% if error %}
+        <p>{{error}}! </p>
+        {% endif %}
+
+ </p>
+
+    </form>
     <form action="" method="post">
         <p>
-     <label for="username">Username</label>
-     <input type="text" name="username">
+     <label for="login1">login</label>
+     <input type="text" name="login1">
  </p>
  <p>
      <label for="password">Password</label>
      <input type="password" name="password">
  </p>
  <p>
-     <input type="submit">
+     <input type="submit" value="login" name="login">
+  <input type="submit" value="registration" name="registration">
  </p>
-    </form>
+
+ </form>
 
 </body>
 </html>
